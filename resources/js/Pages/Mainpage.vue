@@ -1,9 +1,8 @@
 <template>
-<div>
-    <navheader></navheader>
-    <search></search>
-    <content></content>
-</div>
+    <div>
+        <navheader></navheader>
+        <content></content>
+    </div>
 </template>
 <script>
 import Navheader from '../Mycomponents/Navheader';
@@ -12,11 +11,11 @@ import Search from '../Mycomponents/Search';
 
 
 export default {
-  components: {
-    Navheader,
-    Content,
-    Search,
-  }
+    components: {
+        Navheader,
+        Content,
+        Search
+    }
 }
 </script>
 

@@ -1,8 +1,12 @@
 <template>
-    <div class="content">
-        <h3 class="content-title">Content title</h3>
-        <div class="content-body">
-            <p>Post 1</p>
+    <div class="container">
+        <div class="row" id="content-title">
+            <h3>Article title</h3>
+        </div>
+        <div class="row" id="content-body">
+            <p>
+                content
+            </p>
         </div>
     </div>
 </template>

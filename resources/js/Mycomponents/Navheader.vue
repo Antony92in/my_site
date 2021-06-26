@@ -1,10 +1,28 @@
 <template>
     <div class="container">
         <div class="row align-items-center" id="nav-header">
-            <h1 class="col-5">IT-Content</h1>
+            <h1 class="col-7">IT-Content</h1>
             <h2 class="col-md-auto">Алгоритмы</h2>
             <h2 class="col-md-auto">Паттерны</h2>
             <h2 class="col-md-auto">Статьи</h2>
         </div>
+        <div class="row">
+            <div class="col-10">
+                <search></search>
+            </div>
+            <div class="col">
+                <inertia-link href="/login" class="btn btn-outline-secondary">Login</inertia-link>
+                <inertia-link href="/login"><img src="login.png"></inertia-link>
+            </div>
+        </div>
     </div>
 </template>
+<script>
+import Search from './Search';
+
+export default {
+   components: {
+       Search,
+   }
+}
+</script>

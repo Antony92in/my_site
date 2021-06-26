@@ -44,7 +44,7 @@
     import BreezeValidationErrors from '@/Components/ValidationErrors'
 
     export default {
-        layout: BreezeGuestLayout,
+
 
         components: {
             BreezeButton,
