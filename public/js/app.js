@@ -19864,10 +19864,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "nav-header"
+  "class": "container"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"title\">Page header</h1><div class=\"cat-block\"><h2 class=\"cat-title\">Algorithms</h2><h2 class=\"cat-title\">Frameworks</h2><h2 class=\"cat-title\">Patterns</h2></div>", 2);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"row align-items-center\" id=\"nav-header\"><h1 class=\"col-5\">IT-Content</h1><h2 class=\"col-md-auto\">Алгоритмы</h2><h2 class=\"col-md-auto\">Паттерны</h2><h2 class=\"col-md-auto\">Статьи</h2></div>", 1);
 
 function render(_ctx, _cache) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2]);

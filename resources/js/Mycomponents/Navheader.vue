@@ -1,10 +1,10 @@
 <template>
-    <div class="nav-header">
-        <h1 class="title">Page header</h1>
-        <div class="cat-block">
-            <h2 class="cat-title">Algorithms</h2>
-            <h2 class="cat-title">Frameworks</h2>
-            <h2 class="cat-title">Patterns</h2>
+    <div class="container">
+        <div class="row align-items-center" id="nav-header">
+            <h1 class="col-5">IT-Content</h1>
+            <h2 class="col-md-auto">Алгоритмы</h2>
+            <h2 class="col-md-auto">Паттерны</h2>
+            <h2 class="col-md-auto">Статьи</h2>
         </div>
     </div>
 </template>
