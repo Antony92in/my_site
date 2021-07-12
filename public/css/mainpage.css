@@ -31,3 +31,30 @@
     margin-top: 20px;
 }
 
+#login-form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#register-form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#register-form .buttons {
+    margin-top: 20px;
+    display: flex;
+}
+
+#register-form .item {
+    margin-right: 10px;
+}
+
+#login-status {
+    max-width: 500px;
+    margin: auto;
+    color: red;
+}
+

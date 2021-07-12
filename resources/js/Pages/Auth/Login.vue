@@ -1,19 +1,14 @@
 <template>
-    <breeze-validation-errors class="mb-4" />
 
-    <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
-        {{ status }}
-    </div>
-
-    <form @submit.prevent="submit">
+    <form @submit.prevent="submit" id="login-form">
         <div>
             <breeze-label for="email" value="Email" />
-            <breeze-input id="email" type="email" class="mt-1 block w-full" v-model="form.email" required autofocus autocomplete="username" />
+            <breeze-input id="email" type="email" class="form-control" v-model="form.email" required autofocus autocomplete="username" />
         </div>
 
         <div class="mt-4">
             <breeze-label for="password" value="Password" />
-            <breeze-input id="password" type="password" class="mt-1 block w-full" v-model="form.password" required autocomplete="current-password" />
+            <breeze-input id="password" type="password" class="form-control" v-model="form.password" required autocomplete="current-password" />
         </div>
 
         <div class="block mt-4">
@@ -28,11 +23,17 @@
                 Forgot your password?
             </inertia-link>
 
-            <breeze-button class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+            <breeze-button  class="btn btn-primary" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                 Log in
             </breeze-button>
         </div>
     </form>
+    <div id="login-status">
+        <breeze-validation-errors class="input-group has-validation" />
+        <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
+            {{ status }}
+        </div>
+    </div>
 </template>
 
 <script>

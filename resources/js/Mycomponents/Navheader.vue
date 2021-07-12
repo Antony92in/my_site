@@ -13,6 +13,7 @@
             <div class="col">
                 <inertia-link href="/login" class="btn btn-outline-secondary">Login</inertia-link>
                 <inertia-link href="/login"><img src="login.png"></inertia-link>
+                <inertia-link href="/register" class="btn btn-outline-secondary">Register</inertia-link>
             </div>
         </div>
     </div>
