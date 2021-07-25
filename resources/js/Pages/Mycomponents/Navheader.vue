@@ -10,10 +10,14 @@
             <div class="col-10">
                 <search></search>
             </div>
-           <div class="col" v-if="$page.props.auth.user.admin == 1">
-                <inertia-link href="/admin">Admin page</inertia-link>
-           </div>
-            <div class="col" v-if="!$page.props.auth">
+            <div class="col" v-if="$page.props.auth.user">
+                <div v-if="$page.props.auth.user.admin == 1">
+                    <inertia-link href="/admin">Admin page</inertia-link>
+                </div>
+                <br>
+                <inertia-link href="/logout" method="POST">Logout</inertia-link>
+            </div>
+            <div class="col" v-else>
                 <inertia-link href="/login" class="btn btn-outline-secondary">Login</inertia-link>
                 <inertia-link href="/login"><img src="login.png"></inertia-link>
                 <inertia-link href="/register" class="btn btn-outline-secondary">Register</inertia-link>
@@ -25,8 +29,8 @@
 import Search from './Search';
 
 export default {
-   components: {
-       Search,
-   }
+    components: {
+        Search,
+    }
 }
 </script>

@@ -19,14 +19,12 @@ Route::get('/', function () {
     return Inertia::render('Mainpage', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
     ]);
 });
 
 Route::get('/admin', function () {
     return Inertia::render('Mycomponents/Admin');
-})->middleware(['auth'])->name('admin');
+})->middleware(['auth', 'isAdmin'])->name('admin');
 
 
 require __DIR__.'/auth.php';
