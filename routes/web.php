@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\PostController;
+use App\Models\Post;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -15,16 +18,13 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Mainpage', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-    ]);
-});
+Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/admin', function () {
     return Inertia::render('Mycomponents/Admin');
 })->middleware(['auth', 'isAdmin'])->name('admin');
+
+Route::post('/create-post', [PostController::class, 'create']);
 
 
 require __DIR__.'/auth.php';
