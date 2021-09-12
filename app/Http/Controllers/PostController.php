@@ -28,14 +28,16 @@ class PostController extends Controller
         $validation = $data->validate([
             'title' => ['required', 'max:300'],
             'body' => ['required'],
+            'category' => ['required', 'integer'] ,
             'author_id' => ['required', 'integer'],
         ]);
 
         $post = new Post();
         $post->title = $data->title;
         $post->content = $data->body;
-        $post->author = $data->author_id;
+        $post->category = $data->category;
+        $post->author_id = $data->author_id;
+        $post->created_at = time();
         $post->save();
-
     }
 }

@@ -17,9 +17,11 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('content');
-            $table->unsignedBigInteger('author');
-            $table->foreign('author')->references('id')->on('users');
-            $table->timestamps();
+            $table->integer('category');
+            $table->unsignedBigInteger('author_id');
+            $table->foreign('author_id')->references('id')->on('users');
+            $table->bigInteger('created_at');
+            $table->bigInteger('updated_at')->nullable(true);
         });
     }
 
