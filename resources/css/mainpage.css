@@ -26,11 +26,6 @@
     width: 10px;
 }
 
-#content-title {
-    text-align: center;
-    margin-top: 20px;
-}
-
 #login-form {
     max-width: 500px;
     margin: auto;
@@ -64,4 +59,9 @@
 
 #buttons a {
     margin-top: 10px;
+}
+
+#posts #title {
+    text-align: center;
+    margin-top: 20px;
 }

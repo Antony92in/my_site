@@ -1,12 +1,18 @@
 <template>
     <div class="container">
-        <div class="row" id="content-title">
-            <h3>Article title</h3>
-        </div>
-        <div class="row" id="content-body">
-            <p>
-                content
-            </p>
-        </div>
+       <div v-for="post in posts" id="posts">
+           <h3 id="title">{{ post.title }}</h3>
+           <p id="content">{{ post.content }}</p>
+           <hr>
+       </div>
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            posts: this.$page.props.posts
+        }
+    }
+}
+</script>
