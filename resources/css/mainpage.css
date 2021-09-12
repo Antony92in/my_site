@@ -1,0 +1,67 @@
+#main-page {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav-header {
+    margin-top: 20px;
+    padding-left: 10px;
+    background-color: #edf2f7;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+#search-input {
+    margin-top: 10px;
+    float: right;
+}
+
+#search-input img {
+    width: auto;
+    height: 60%;
+}
+
+#search-input a {
+    width: 10px;
+}
+
+#content-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#login-form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#register-form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#register-form .buttons {
+    margin-top: 20px;
+    display: flex;
+}
+
+#register-form .item {
+    margin-right: 10px;
+}
+
+#login-status {
+    max-width: 500px;
+    margin: auto;
+    color: red;
+}
+
+#buttons {
+    margin-top: 10px;
+}
+
+#buttons a {
+    margin-top: 10px;
+}
