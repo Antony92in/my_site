@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use Illuminate\Validation\Rule;
 
 
 /**
@@ -28,7 +29,11 @@ class PostController extends Controller
         $validation = $data->validate([
             'title' => ['required', 'max:300'],
             'body' => ['required'],
-            'category' => ['required', 'integer'] ,
+            'category' => [
+                'required',
+                'integer',
+                Rule::in(Post::CATEGORIES),
+            ],
             'author_id' => ['required', 'integer'],
         ]);
 
