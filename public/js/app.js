@@ -19207,9 +19207,10 @@ __webpack_require__.r(__webpack_exports__);
         category: this.category,
         author_id: this.$page.props.auth.user.id
       }).then(function (response) {
-        _this.form_response = response;
+        _this.form_response = 'Added';
         _this.body = '';
         _this.title = '';
+        _this.category = '';
       })["catch"](function (error) {
         _this.form_errors = error.response.data.errors;
       });

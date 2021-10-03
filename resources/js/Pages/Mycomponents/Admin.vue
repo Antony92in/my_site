@@ -43,9 +43,10 @@ export default {
                 author_id: this.$page.props.auth.user.id
             })
             .then((response) => {
-                this.form_response = response;
+                this.form_response = 'Added';
                 this.body = '';
                 this.title = '';
+                this.category = '';
             })
             .catch((error) => {
                 this.form_errors = error.response.data.errors

@@ -17,6 +17,8 @@ class Post extends Model
       'Articles' => 3,
     ];
 
+    public $timestamps = false;
+
     use HasFactory;
 
 }
