@@ -21,7 +21,7 @@ use Inertia\Inertia;
 Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/admin', function () {
-    return Inertia::render('Mycomponents/Admin');
+    return Inertia::render('Mycomponents/Admin', ['post_categories' => Post::CATEGORIES]);
 })->middleware(['auth', 'isAdmin'])->name('admin');
 
 Route::post('/create-post', [PostController::class, 'create']);

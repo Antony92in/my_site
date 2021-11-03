@@ -18,7 +18,7 @@ class IndexController extends Controller
         return Inertia::render('Mainpage', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
-            'posts' => Post::all(),
+            'posts' => Post::orderBy('created_at', 'desc')->get(),
         ]);
     }
 }
