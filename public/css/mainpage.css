@@ -73,10 +73,10 @@
 
 #the-site-footer {
     max-width: 300px;
-    position: absolute;
-    bottom: 0;
-    right: 10em;
+    position: relative;
+    margin-top: 100px;
     font-family: cursive;
+    text-align: center;
 }
 
 .article-type:hover {
