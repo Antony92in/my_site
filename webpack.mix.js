@@ -19,6 +19,7 @@ mix.js('resources/js/app.js', 'public/js')
         require('autoprefixer'),
     ])
     .css('resources/css/mainpage.css', 'public/css')
+    .styles('resources/css/prism.css', 'public/css')
     .webpackConfig(require('./webpack.config'));
 
 if (mix.inProduction()) {
