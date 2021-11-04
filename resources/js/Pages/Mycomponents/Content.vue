@@ -2,7 +2,7 @@
     <div class="container">
        <div v-for="post in posts" id="posts">
            <h3 id="title">{{ post.title }}</h3>
-           <p id="content">{{ post.content }}</p>
+           <p id="content" v-html="post.content"></p>
            <hr>
        </div>
     </div>

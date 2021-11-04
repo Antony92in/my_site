@@ -66,3 +66,15 @@
     margin-top: 20px;
 }
 
+#the-site-footer {
+    max-width: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 10em;
+    font-family: cursive;
+}
+
+.article-type:hover {
+    color: #4a5568;
+}
+

@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row align-items-center" id="nav-header">
             <h1 class="col-7">IT-Notes</h1>
-            <h2 class="col-md-auto">Алгоритмы</h2>
-            <h2 class="col-md-auto">Паттерны</h2>
-            <h2 class="col-md-auto">Статьи</h2>
+            <h2 class="col-md-auto article-type">Алгоритмы</h2>
+            <h2 class="col-md-auto article-type">Паттерны</h2>
+            <h2 class="col-md-auto article-type">Статьи</h2>
         </div>
         <div class="row">
             <div class="col-10">
