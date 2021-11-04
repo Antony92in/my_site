@@ -74,3 +74,7 @@
     font-family: cursive;
 }
 
+.article-type:hover {
+    color: #4a5568;
+}
+

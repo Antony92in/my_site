@@ -18,6 +18,9 @@ export default {
         Content,
         Search,
         TheSiteFooter
+    },
+    mounted() {
+        Prism.highlightAll();
     }
 }
 </script>
