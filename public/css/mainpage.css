@@ -66,15 +66,26 @@
     margin-top: 20px;
 }
 
+#post-create {
+    max-width: 700px;
+    padding: 10px;
+}
+
 #the-site-footer {
     max-width: 300px;
-    position: absolute;
-    bottom: 0;
-    right: 10em;
+    position: relative;
+    margin-top: 100px;
     font-family: cursive;
+    text-align: center;
 }
 
 .article-type:hover {
     color: #4a5568;
 }
+
+.create-post-buttons a {
+    float: right;
+}
+
+
 

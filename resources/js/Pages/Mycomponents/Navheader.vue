@@ -17,8 +17,6 @@
                 <inertia-link href="/logout" method="POST" class="btn btn-outline-secondary">Logout</inertia-link>
             </div>
             <div class="col" v-else>
-                <inertia-link href="/login" class="btn btn-outline-secondary">Login</inertia-link>
-                <inertia-link href="/login"><img src="login.png"></inertia-link>
             </div>
         </div>
     </div>
