@@ -12,10 +12,13 @@
             <option v-for="(cat, name) in $page.props.post_categories" :value="cat">{{ name }}</option>
         </select>
         <label>Content</label>
-        <textarea name="body" class="form-control" v-model="body" rows="5">
+        <textarea name="body" class="form-control" v-model="body" rows="20">
         </textarea>
         <br>
-        <input type="submit" name="submit" value="Save" class="btn btn-outline-primary">
+        <div class="create-post-buttons">
+            <a @click="addCodeBlock" class="btn btn-outline-secondary">Add code block</a>
+            <input type="submit" name="submit" value="Save" class="btn btn-outline-primary">
+        </div>
     </form>
     <p>{{ form_response }}</p>
     <ul v-if="form_errors">
@@ -51,15 +54,12 @@ export default {
             .catch((error) => {
                 this.form_errors = error.response.data.errors
             });
+        },
+        addCodeBlock() {
+            this.body = this.body + "\n" + "<pre><code class='language-php'>" + "\n\n" + "</code></pre>";
         }
     }
 }
 </script>
 
-<style>
- #post-create {
-     max-width: 700px;
-     padding: 10px;
- }
-</style>
 
